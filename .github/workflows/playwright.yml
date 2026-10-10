@@ -28,8 +28,8 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run sorting tests
-        run: npm run test:sorting
+      - name: Run sorting tests across all browsers
+        run: npm run test:sorting:all
         env:
           SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
           SAUCE_PASSWORD: ${{ secrets.SAUCE_PASSWORD }}

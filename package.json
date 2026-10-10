@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:smoke":"playwright test --grep @smoke --project=chromium",
+    "test:smoke": "playwright test --grep @smoke --project=chromium",
     "test:regression": "playwright test --grep @regression --project=chromium",
-    "test:sorting": "playwright test --grep @sorting --project=chromium"
+    "test:sorting": "playwright test --grep @sorting --project=chromium",
+    "test:sorting:all": "playwright test --grep @sorting",
+    "report": "playwright show-report"
   },
   "keywords": [],
   "author": "",
